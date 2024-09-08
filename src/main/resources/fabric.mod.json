@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "amongus-items",
+	"version": "${version}",
+	"name": "Amongus Items",
+	"description": "I want among us",
+	"authors": [
+		"Deebl"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/amongus-items/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.deebl.amongusitems.AmongusItems"
+		],
+		"fabric-datagen": [
+			"net.deebl.amongusitems.AmongusItemsDataGenerator"
+		],
+		"client": [
+			"net.deebl.amongusitems.AmongusItemsClient"
+		]
+	},
+	"mixins": [
+		"amongus-items.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
